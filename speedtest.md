@@ -1,15 +1,14 @@
+安装
 ```
-yum install wget
+yum install wget -y
 
 wget https://bintray.com/ookla/rhel/rpm -O bintray-ookla-rhel.repo
 
 mv bintray-ookla-rhel.repo /etc/yum.repos.d/
 
-# Other non-official binaries will conflict with Speedtest CLI
-
-# Example how to remove using yum
-
-# rpm -qa | grep speedtest | xargs -I {} sudo yum -y remove {}
-
-yum install speedtest
+yum install speedtest -y
+```
+删除冲突项:
+```
+rpm -qa | grep speedtest | xargs -I {} sudo yum -y remove {}
 ```
