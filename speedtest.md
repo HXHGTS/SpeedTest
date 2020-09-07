@@ -1,4 +1,4 @@
-安装
+安装SpeedTest:
 ```
 yum install wget -y
 
