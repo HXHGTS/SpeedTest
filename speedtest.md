@@ -1,3 +1,4 @@
+```
 yum install wget
 
 wget https://bintray.com/ookla/rhel/rpm -O bintray-ookla-rhel.repo
@@ -11,3 +12,4 @@ mv bintray-ookla-rhel.repo /etc/yum.repos.d/
 # rpm -qa | grep speedtest | xargs -I {} sudo yum -y remove {}
 
 yum install speedtest
+```
